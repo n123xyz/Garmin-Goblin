@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-sync-usb-mtp-device"
+description = "Enables the sync_usb_mtp_device command without any pre-configured scope."
+commands.allow = ["sync_usb_mtp_device"]
+
+[[permission]]
+identifier = "deny-sync-usb-mtp-device"
+description = "Denies the sync_usb_mtp_device command without any pre-configured scope."
+commands.deny = ["sync_usb_mtp_device"]

@@ -1,0 +1,40 @@
+{
+  "name": "garmin-goblin",
+  "version": "0.1.0",
+  "description": "Garmin Goblin on-device AI health and fitness RPG companion",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "tauri": "tauri"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.7.1",
+    "@tauri-apps/plugin-notification": "^2.3.3",
+    "@tauri-apps/plugin-opener": "^2",
+    "leaflet": "^1.9.4",
+    "lucide-svelte": "^1.0.1",
+    "marked": "^18.0.3",
+    "svelte-french-toast": "^1.2.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/kit": "^2.9.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@tailwindcss/vite": "^4.2.4",
+    "@tauri-apps/cli": "^2",
+    "@types/leaflet": "^1.9.22",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.13",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "tailwindcss": "^4.2.4",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3"
+  }
+}

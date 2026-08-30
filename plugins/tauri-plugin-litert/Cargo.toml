@@ -1,0 +1,20 @@
+[package]
+name = "tauri-plugin-litert"
+version = "0.1.0"
+authors = ["n123xyz"]
+description = ""
+license = "MIT"
+edition = "2021"
+rust-version = "1.77.2"
+exclude = ["/examples", "/dist-js", "/guest-js", "/node_modules"]
+links = "tauri-plugin-litert"
+
+[dependencies]
+tauri = { version = "2.11.0" }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2"
+base64 = "0.22"
+sha2 = "0.10"
+
+[build-dependencies]
+tauri-plugin = { version = "2.6.0", features = ["build"] }

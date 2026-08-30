@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-scan-usb-mtp-devices"
+description = "Enables the scan_usb_mtp_devices command without any pre-configured scope."
+commands.allow = ["scan_usb_mtp_devices"]
+
+[[permission]]
+identifier = "deny-scan-usb-mtp-devices"
+description = "Denies the scan_usb_mtp_devices command without any pre-configured scope."
+commands.deny = ["scan_usb_mtp_devices"]

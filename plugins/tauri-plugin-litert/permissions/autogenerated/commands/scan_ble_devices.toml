@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-scan-ble-devices"
+description = "Enables the scan_ble_devices command without any pre-configured scope."
+commands.allow = ["scan_ble_devices"]
+
+[[permission]]
+identifier = "deny-scan-ble-devices"
+description = "Denies the scan_ble_devices command without any pre-configured scope."
+commands.deny = ["scan_ble_devices"]

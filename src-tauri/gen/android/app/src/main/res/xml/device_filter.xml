@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Garmin International USB Vendor ID: 0x091E (decimal 2334) -->
+    <usb-device vendor-id="2334" />
+    <!-- MTP USB Class 6 (Still Image / MTP) Subclass 1 Protocol 1 -->
+    <usb-device class="6" subclass="1" />
+</resources>

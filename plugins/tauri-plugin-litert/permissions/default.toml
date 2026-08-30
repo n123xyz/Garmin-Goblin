@@ -1,0 +1,23 @@
+[default]
+description = "Default permissions for the plugin"
+permissions = [
+  "allow-ping",
+  "allow-init-model",
+  "allow-check-model-exists",
+  "allow-download-model",
+  "allow-purge-model",
+  "allow-generate-chat",
+  "allow-close-model",
+  "allow-pick-gallery-image",
+  "allow-take-camera-photo",
+  "allow-scan-ble-devices",
+  "allow-sync-ble-device",
+  "allow-start-speech-recognition",
+  "allow-stop-speech-recognition",
+  "allow-check-calendar-permission",
+  "allow-request-calendar-permission",
+  "allow-get-calendar-events",
+  "allow-scan-usb-mtp-devices",
+  "allow-request-usb-mtp-permission",
+  "allow-sync-usb-mtp-device"
+]

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background: Deep dungeon radial gradient -->
+    <radialGradient id="dungeonBg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Bio-glow Aura -->
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#047857" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Gribble Skin Gradient (from your Svelte logic) -->
+    <linearGradient id="goblinSkin" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="60%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <!-- Glowing Yellow Eyes -->
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="75%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Full Bleed Square Canvas -->
+  <rect width="512" height="512" fill="url(#dungeonBg)" />
+
+  <!-- Ambient Cavern / Emerald Aura -->
+  <circle cx="256" cy="270" r="230" fill="url(#auraGlow)" filter="url(#subtleGlow)" />
+
+  <!-- Scaled & Centered Gribble Geometry (240x240 source scaled 2.0x, offset: x+16, y+28) -->
+  <g id="gribble-character">
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <polygon points="116,248 26,148 156,198" fill="url(#goblinSkin)" stroke="#064e3b" stroke-width="5" stroke-linejoin="round" />
+    <polygon points="120,238 52,164 148,198" fill="#f43f5e" opacity="0.32" />
+
+    <!-- Right Ear -->
+    <polygon points="396,248 486,148 356,198" fill="url(#goblinSkin)" stroke="#064e3b" stroke-width="5" stroke-linejoin="round" />
+    <polygon points="392,238 460,164 364,198" fill="#f43f5e" opacity="0.32" />
+
+    <!-- Body & Torso -->
+    <path d="M 176,358 Q 256,378 336,358 L 366,478 Q 256,498 146,478 Z" fill="#064e3b" stroke="#022c22" stroke-width="6" stroke-linejoin="round" />
+    
+    <!-- Leather Harness & Golden Buckle Rivet -->
+    <path d="M 180,360 L 336,478" stroke="#78350f" stroke-width="14" stroke-linecap="round" />
+    <circle cx="258" cy="418" r="12" fill="#f59e0b" stroke="#78350f" stroke-width="4" />
+
+    <!-- Head -->
+    <ellipse cx="256" cy="258" rx="130" ry="110" fill="url(#goblinSkin)" stroke="#064e3b" stroke-width="6" />
+
+    <!-- Cheeks -->
+    <circle cx="176" cy="298" r="20" fill="#f43f5e" opacity="0.25" />
+    <circle cx="336" cy="298" r="20" fill="#f43f5e" opacity="0.25" />
+
+    <!-- Left Eye -->
+    <ellipse cx="212" cy="248" rx="28" ry="36" fill="#111827" stroke="#000000" stroke-width="3" />
+    <circle cx="212" cy="248" r="22" fill="url(#eyeGlow)" />
+    <circle cx="206" cy="240" r="7" fill="#ffffff" />
+
+    <!-- Right Eye -->
+    <ellipse cx="300" cy="248" rx="28" ry="36" fill="#111827" stroke="#000000" stroke-width="3" />
+    <circle cx="300" cy="248" r="22" fill="url(#eyeGlow)" />
+    <circle cx="294" cy="240" r="7" fill="#ffffff" />
+
+    <!-- Goblin Hook Nose -->
+    <path d="M 246,264 Q 256,292 266,264" stroke="#064e3b" stroke-width="6" fill="none" stroke-linecap="round" />
+
+    <!-- Grinning Mouth & Upward Tusk -->
+    <path d="M 206,312 Q 256,348 306,312" stroke="#064e3b" stroke-width="7" fill="none" stroke-linecap="round" />
+    <polygon points="224,324 232,304 242,324" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" stroke-linejoin="round" />
+  </g>
+</svg>

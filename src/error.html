@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Garmin Goblin - Error</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: #090d10;
+        color: #f4f4f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .card {
+        background: #18181b;
+        border: 1px solid rgba(244, 63, 94, 0.4);
+        border-radius: 16px;
+        padding: 24px;
+        max-width: 480px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      }
+      h1 {
+        font-size: 20px;
+        color: #fb7185;
+        margin: 0 0 12px 0;
+      }
+      pre {
+        background: #09090b;
+        border: 1px solid #27272a;
+        padding: 12px;
+        border-radius: 8px;
+        color: #fda4af;
+        font-size: 11px;
+        text-align: left;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-break: break-all;
+      }
+      button {
+        margin-top: 16px;
+        background: #10b981;
+        color: #090d10;
+        font-weight: bold;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div style="font-size: 36px; margin-bottom: 8px;">👹</div>
+      <h1>%sveltekit.status% - Startup Error</h1>
+      <pre>%sveltekit.error.message%</pre>
+      <button onclick="window.location.href='/'">Restart Cavern</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+# OS & IDE
+.DS_Store
+Thumbs.db
+*.iml
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node / SvelteKit
+node_modules/
+/build
+/dist
+website/dist/
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Rust / Cargo / Tauri
+src-tauri/target/
+target/
+**/*.rs.bk
+src-tauri/gen/schemas
+/models
+
+# Proprietary AI runtime binaries & models
+libraries/
+*.litertlm
+*.bin
+*.onnx
+*.tflite
+*.safetensors
+
+# Local databases & user data
+*.db
+*.sqlite
+*.sqlite3
+*.fit
+
+# Android / Gradle / Build Outputs & Keys
+src-tauri/gen/android/.gradle/
+src-tauri/gen/android/build/
+src-tauri/gen/android/app/build/
+src-tauri/gen/android/.idea/
+src-tauri/gen/android/local.properties
+src-tauri/gen/android/key.properties
+src-tauri/gen/android/keystore.properties
+src-tauri/gen/android/captures/
+src-tauri/gen/android/.externalNativeBuild/
+src-tauri/gen/android/.cxx/
+src-tauri/gen/android/.tauri/
+src-tauri/gen/android/tauri.settings.gradle
+src-tauri/gen/android/app/tauri.build.gradle.kts
+src-tauri/gen/android/app/proguard-tauri.pro
+src-tauri/gen/android/app/tauri.properties
+src-tauri/gen/android/app/src/main/assets/tauri.conf.json
+src-tauri/gen/android/app/src/main/jniLibs/**/*.so
+src-tauri/gen/android/app/src/main/**/generated/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Plugins build artifacts
+plugins/**/target/
+plugins/**/android/build/
+plugins/**/android/.tauri/
+plugins/**/Cargo.lock
+
+# Reference examples
+example/
+CARIT/
+FACENAME*/
+VISMOTOR*/
